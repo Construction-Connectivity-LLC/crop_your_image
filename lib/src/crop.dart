@@ -692,7 +692,7 @@ Uint8List _doCrop(List<dynamic> cropData) {
   final originalImage = cropData[0] as image.Image;
   final rect = cropData[1] as Rect;
   return Uint8List.fromList(
-    image.encodePng(
+    image.encodeJpg(
       image.copyCrop(
         originalImage,
         rect.left.toInt(),
